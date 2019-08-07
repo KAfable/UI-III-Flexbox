@@ -66,14 +66,14 @@ body {
 }
 
 .nav-container {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 nav a {
-	margin-right: 40px;
+	margin-right: 60px;
 	color: rgba(128, 128, 128, .7);
 	text-decoration: none;
 }
@@ -90,6 +90,7 @@ nav a {
 #action-container-inner {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 h1 {
@@ -98,12 +99,12 @@ h1 {
 	margin-bottom: 15px;
 }
 
-button {
-	display: block;
-	margin: 0 auto;
+button.action {
 	background-color: white;
 	border: 1px solid black;
-	padding: 5px 50px 5px 50px;
+	padding: 10px 50px 10px 50px;
+	width: 84px;
+	box-sizing: content-box;
 }
 
 .first-section {
@@ -132,3 +133,64 @@ button {
 }
 
 /* services.html styling */
+
+.services-header-img {
+	margin-bottom: 40px;
+}
+
+#services-intro {
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+#services-content {
+	margin: 20px 0px 40px 0px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+
+.service-item {
+	background-color: lightgray;
+	max-width: 47%;
+	margin: 20px 0px;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+.service-item p {
+	margin-bottom: 20px;
+}
+
+.service-item button {
+	background-color: #fff;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-sizing: content-box;
+	padding: 10px 40px;
+}
+
+/* is this correct? Aren't footers usually standardized throughout a webpage? */
+
+#services-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+#footer-container {
+	/* why doesn't flex automatically go to 100% of the height or why doesn't 100% work? */
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+}
+
+#footer-container ul li {
+	list-style-type: square;
+	list-style-position: inside;
+	margin: 15px 0px;
+}
