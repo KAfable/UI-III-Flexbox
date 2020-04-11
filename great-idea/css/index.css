@@ -194,3 +194,23 @@ button.action {
 	list-style-position: inside;
 	margin: 15px 0px;
 }
+
+/* Vision HTML */
+
+#vision-row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#vision-row .service-item {
+	display: inline;
+}
+
+#vision-row:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+.vision-img {
+	max-width: 400px;
+}
